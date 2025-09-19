@@ -1,143 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* Reset básico */
+body, h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* --- Estilos Generales --- */
 body {
-    font-family: sans-serif;
-    margin: 70px;
-    margin-top:0;
-    padding: 2em;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background: url("assets/fondo\ rosa.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-
-h1, h2 {
-    font-family: 'Space Mono';
-    color: #333;
+/* Título principal */
+.title-container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
-h3{
-    font-family: 'Open Sans';
-    font-size: 1em;
+.title-container h1 {
+  font-size: 2.5em;
+  color: #e75480; /* Rosa fuerte */
 }
 
-/* --- Contenedor Principal --- */
-#container {
-    display: grid;
-    /* Define 2 columnas: la primera ocupa 1 fracción, la segunda 2 fracciones */
-    grid-template-columns: 1fr 2fr;
-    gap: 5em; /* Espacio entre las columnas */
-    align-items: start; /* Alinea los items al inicio */
+/* Contenedor principal */
+.container {
+  display: flex;
+  gap: 20px;
 }
 
-/* --- Columna Izquierda: Intro --- */
-.intro {
-    /* Por defecto, se ubica en la primera columna del grid */
-    display: flex;
-    flex-direction: column; /* Organiza los elementos internos en una columna */
-    justify-content: center; /* Centra el contenido verticalmente */
+/* Columnas */
+.left-column, .right-column {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.intro p {
-    /* El párrafo ya usa el ancho de su contenedor por defecto */
-    font-family: 'Open Sans';
-    text-align: justify;
-    line-height: 1.6;
+/* Subtítulos principales */
+.section-title-container {
+  background: rgba(255, 192, 203, 0.4);
+  padding: 8px;
+  margin: 15px 0;
+  border-radius: 6px;
 }
 
-.intro a {
-    /* El ancla del botón se centrará gracias al 'align-self' */
-    align-self: center; /* Centra este elemento específico en el eje transversal */
-    margin-top: 1em;
+.section-title-container h2 {
+  margin: 0;
+  color: #e75480;
 }
 
-.intro button {
-    font-family: 'Space Mono';
-    font-size: 1em;
-    padding: 15px 45px;
-    margin-top: 30px;
-    border: none;
-    background-color: #a588f4;
-    color: #000;
- 
-    cursor: pointer;
-    border-radius: 50px;
-    
+/* Subtítulo pequeño (P5.js) */
+.subtitulo-peque h3 {
+  color: #e75480;
+  margin: 10px 0;
 }
 
-.intro button:hover {
-    background: #000; ;
-    color: white;
-
+/* Proyectos */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
 }
 
-
-/* Columna Derecha: Proyectos */
-.proyectos {
-    display: flex;
-    flex-direction: column;
-    /* Por defecto, se ubica en la segunda columna del grid */
+.project-card {
+  background: #fff;
+  border: 1px solid #f8c8dc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* --- Galería de Proyectos --- */
-.galeria {
-    display: grid;
-    /* Define 3 columnas de igual tamaño */
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5em; /* Espacio entre las tarjetas */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* --- Tarjetas Individuales --- */
-.tarjeta {
-    background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    overflow: hidden; /* Asegura que la imagen no se salga de los bordes redondeados */
+.project-card img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 6px;
 }
 
-.tarjeta a {
-    /* El ancla ocupa todo el espacio de su columna en la galería */
-    display: block; /* Permite que el ancla ocupe todo el espacio */
-    width: 100%;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s ease-in-out;
+.project-card p {
+  font-size: 0.9em;
+  margin-top: 8px;
 }
 
-.tarjeta a:hover {
-    filter: brightness(70%); /* Aplica un filtro de brillo al 70% (más oscuro) */
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+/* Links */
+a {
+  text-decoration: none;
+  color: #e75480;
 }
 
-.tarjeta img {
-    /* La imagen se ajusta al ancho del ancla */
-    width: 100%;
-    display: block; /* Elimina espacios en blanco debajo de la imagen */
+a:hover {
+  text-decoration: underline;
 }
 
-.tarjeta h3 {
-    text-align: center;
-    padding: 0.5em 0;
-    margin: 0;
+/* Botón Wiki */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #e75480;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-
-/* --- Media Query para pantallas pequeñas --- */
-@media (max-width: 900px) {
-    
-    /* Ajusta los márgenes del body para aprovechar el espacio */
-    body {
-        margin: 20px;
-        padding: 1em;
-    }
-
-    /* Cambia el contenedor principal a una sola columna */
-    #container {
-        grid-template-columns: 1fr;
-    }
-
-    /* Cambia la galería de proyectos a una sola columna */
-    .galeria {
-        grid-template-columns: 1fr;
-    }
+.btn:hover {
+  background: #c63b60;
 }

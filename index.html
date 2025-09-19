@@ -1,133 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IE 2025</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MI PORTAFOLIOS</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Contenido oculto */
+    .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.6s ease, opacity 0.6s ease;
+    }
+
+    .collapsible-content.show {
+      max-height: 2000px; /* suficientemente alto */
+      opacity: 1;
+    }
+
+    /* Cursor pointer para títulos y subtítulos */
+    .title-container, .sub-title {
+      cursor: pointer;
+    }
+
+    .title-container:hover, .sub-title:hover {
+      color: #ff66b3; /* ejemplo rosa para hover */
+    }
+
+    /* Centrar título principal */
+    .title-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
 </head>
-
-
-<!-- Inicio Body -->
-
 <body>
+  <!-- TÍTULO PRINCIPAL -->
+  <div class="title-container">
+    <h1>MI PORTAFOLIOS</h1>
+  </div>
 
-    <!-- Sección principal -->
-    <header>
-        <h1>Portafolio IE 2025</h1>
-    </header>
+  <!-- CONTENEDOR GENERAL -->
+  <div class="container collapsible-content">
 
-    <!-- Contenedor General -->
-    <div id="container">
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="left-column">
 
-        <!-- Contenedor lado izquierdo - Parrafo y botón -->
-        <div class="intro">
-            <p>
-                Imagen escrita es una asignatura que se centra en la intersección entre diseño,
-                la programación y arte generativo. Utilizando p5.js como herramienta principal, el curso explora los
-                fundamentos de la programación creativa y su aplicación en el diseño visual interactivo.
-            </p>
-            <p>
-                A través del creative coding se hace énfasis en el pensamiento computacional como herramienta de diseño,
-                fomentando un enfoque innovador en la resolución de problemas visuales y la creación artística. La
-                integración de herramientas de IA busca ampliar las posibilidades creativas y técnicas, sirviendo como
-                complemento al proceso de diseño y programación
-            </p>
+      <!-- Presentación del curso -->
+      <div class="section-title-container sub-title">
+        <h2>Presentación del curso</h2>
+      </div>
+      <div class="collapsible-content">
+        <p>
+          Imagen Escrita es una asignatura que se centra en la <strong>intersección</strong> entre <strong>diseño</strong>, la <strong>programación</strong> y 
+          <strong>arte generativo</strong>. Utilizando p5.js como herramienta principal, el curso explora los fundamentos de la <strong>programación creativa</strong> 
+          y su aplicación en el <strong>diseño visual interactivo</strong>.
 
+          A través del <strong>creative coding</strong> se hace énfasis en el pensamiento computacional como herramienta de diseño, fomentando un enfoque 
+          innovador en la resolución de problemas visuales y la creación artística. La integración de herramientas de IA busca ampliar las 
+          posibilidades creativas y técnicas, sirviendo como complemento al proceso de diseño y programación
+        </p>
+      </div>
 
-            <a href="https://wiki.ead.pucv.cl/Sitio_Web_IE_-_Javiera_Ruiz" target="_blank">
-                <button>
-                    wiki del proyecto
-                </button>
-            </a>
+      <!-- Sobre mí -->
+      <div class="section-title-container sub-title">
+        <h2>Sobre mí</h2>
+      </div>
+      <div class="collapsible-content">
+        <p>
+          Soy estudiante de Diseño en la <strong>Pontificia Universidad Católica de Valparaíso</strong>, 
+          con mayor interés en el diseño industrial, aunque también me atrae la programación, el arte y el diseño visual.
+        </p>
 
+        <!-- Contactos -->
+        <div class="section-title-container sub-title">
+          <h2>Contactos</h2>
         </div>
-
-        <!-- Contenedor lado derecho -->
-        <div class="proyectos">
-            <h2>Mis proyectos p5js</h2>
-
-            <!-- Contenedor galería de proyectos -->
-            <div class="galeria">
-                <!-- tarjeta proyecto 1 -->
-                <div class="tarjeta">
-                    <a href="https://editor.p5js.org/jruiz-IE/full/_D3gtXvo_" target="_blank">
-                        <img src="assets/imagen1.png">
-                        </img>
-                        <h3>Tarea 1</h3>
-                    </a>
-                </div>
-
-                <!-- tarjeta proyecto 2 -->
-                <div class="tarjeta">
-                    <a href="">
-                        <img src="assets/imagen2.png">
-                        </img>
-                        <h3>Tarea 2</h3>
-                    </a>
-                </div>
-
-                <!-- tarjeta proyecto 3 -->
-                <div class="tarjeta">
-                    <a href="">
-                        <img src="assets/imagen2.png">
-                        </img>
-                        <h3>Tarea 3</h3>
-                    </a>
-                </div>
-
-                <!-- tarjeta proyecto 4 -->
-                <div class="tarjeta">
-                    <a href="">
-                        <img src="assets/imagen2.png">
-                        </img>
-                        <h3>Tarea 4</h3>
-                    </a>
-                </div>
-
-                <!-- tarjeta proyecto 5 -->
-                <div class="tarjeta">
-                    <a href="">
-                        <img src="assets/imagen2.png">
-                        </img>
-                        <h3>Tarea 5</h3>
-                    </a>
-                </div>
-
-                <!-- tarjeta proyecto 6 -->
-                <div class="tarjeta">
-                    <a href="">
-                        <img src="assets/imagen2.png">
-                        </img>
-                        <h3>Tarea 6</h3>
-                    </a>
-                </div>
-
-                <!-- tarjeta proyecto 7 -->
-                <div class="tarjeta">
-                    <a href="">
-                        <img src="assets/imagen2.png">
-                        </img>
-                        <h3>Tarea 7</h3>
-                    </a>
-                </div>
-                
-                <!-- tarjeta proyecto 8 -->
-                <div class="tarjeta">
-                    <a href="">
-                        <img src="assets/imagen2.png">
-                        </img>
-                        <h3>Tarea 8</h3>
-                    </a>
-                </div>
-
-            </div>
-
+        <div class="collapsible-content">
+          <p>Correo: <a href="mailto:manuheuroroa1234@gmail.com">manuheuroroa1234@gmail.com</a></p>
+          <p>Instagram: <a href="https://instagram.com/__reiatanga">@__reiatanga</a></p>
+          <p>Facebook: <a href="https://facebook.com/MatatouManuheuroroa">Matatou Manuheuroroa</a></p>
         </div>
+      </div>
+
+      <!-- Sketch Integrador -->
+      <div class="section-title-container sub-title">
+        <h2>Sketch Integrador</h2>
+      </div>
+      <div class="collapsible-content">
+        <p>
+          Este sketch reúne lo aprendido durante las cuatro tareas: formas, bucles, transformaciones e interactividad. 
+        </p>
+
+        <!-- Contenedor del sketch -->
+        <div id="sketch-container"></div>
+
+        <!-- Librería p5.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+
+        <!-- Sketch de ondas sinusoidales -->
+        <script>
+          let waveCount = 6;
+          let waveSpacing = 40;
+          let waveColors = [];
+          let particles = [];
+
+          function setup() {
+            let canvas = createCanvas(600, 600);
+            canvas.parent('sketch-container'); // Canvas dentro del div
+            noFill();
+            smooth();
+            colorMode(RGB);
+
+            waveColors = [
+              color('#FFC0CB'),
+              color('#FFB6C1'),
+              color('#FF69B4'),
+              color('#DB7093'),
+              color('#F8BBD0'),
+              color('#E91E63')
+            ];
+
+            for (let i = 0; i < 100; i++) {
+              particles.push({
+                x: random(width),
+                y: random(height),
+                r: random(1, 3),
+                speed: random(0.2, 1),
+                alpha: random(100, 200),
+                color: waveColors[int(random(waveColors.length))]
+              });
+            }
+          }
+
+          function draw() {
+            let bgTop = lerpColor(color('#f8bbd0'), color('#c2185b'), sin(frameCount * 0.01));
+            let bgBottom = lerpColor(color('#c2185b'), color('#f8bbd0'), cos(frameCount * 0.01));
+            setGradient(0, 0, width, height, bgTop, bgBottom);
+
+            translate(0, height / 2);
+
+            for (let i = 0; i < waveCount; i++) {
+              push();
+
+              let offset = i * waveSpacing;
+              let amp = map(mouseY, 0, height, 20, 100);
+              let freq = map(mouseX, 0, width, 0.01, 0.05);
+
+              stroke(waveColors[i % waveColors.length]);
+              strokeWeight(2 + i * 0.5);
+
+              beginShape();
+              for (let x = 0; x <= width; x += 10) {
+                let y = sin(x * freq + frameCount * 0.03 + i * 10) * amp;
+                curveVertex(x, y + offset);
+              }
+              endShape();
+
+              pop();
+            }
+
+            for (let p of particles) {
+              fill(red(p.color), green(p.color), blue(p.color), p.alpha);
+              noStroke();
+              ellipse(p.x, p.y, p.r);
+
+              p.y -= p.speed;
+              if (p.y < 0) {
+                p.y = height;
+                p.x = random(width);
+              }
+            }
+          }
+
+          function setGradient(x, y, w, h, c1, c2) {
+            for (let i = y; i <= y + h; i++) {
+              let inter = map(i, y, y + h, 0, 1);
+              let c = lerpColor(c1, c2, inter);
+              stroke(c);
+              line(x, i, x + w, i);
+            }
+          }
+
+          function mousePressed() {
+            waveColors = shuffle(waveColors);
+            waveSpacing = random(30, 60);
+
+            for (let p of particles) {
+              p.color = waveColors[int(random(waveColors.length))];
+            }
+          }
+        </script>
+      </div>
 
     </div>
 
-</body>
+    <!-- COLUMNA DERECHA -->
+    <div class="right-column">
+      <div class="section-title-container sub-title">
+        <h2>Mis Proyectos</h2>
+      </div>
+      <div class="collapsible-content">
 
+        <!-- Subtítulo P5.js -->
+        <div class="subtitulo-peque sub-title">
+          <h3>P5.js</h3>
+        </div>
+        <div class="collapsible-content">
+          <p>
+            <strong>P5.js</strong> es una biblioteca de JavaScript diseñada para facilitar la creación de <strong>gráficos interactivos</strong>
+            y <strong>arte visual en la web</strong>.
+            Su enfoque está en la accesibilidad y la creatividad, especialmente para artistas, diseñadores y educadores. Estos son los proyectos 
+            desarrollados en p5.js durante el curso.
+          </p>
+
+          <!-- Contenedor de proyectos -->
+          <div class="projects">
+            <div class="project-card">
+              <a href="https://editor.p5js.org/Matatepano/sketches/8jVwo_95g" target="_blank">
+                <img src="assets/Tarea 1 - IE.jpg" alt="Tarea 1">
+                <p><strong>Tarea 1:</strong> Recreación abstracta del álbum musical "Arctic Monkeys", explorando figuras geométricas y color.</p>
+              </a>
+            </div>
+            <div class="project-card">
+              <a href="https://editor.p5js.org/Matatepano/sketches/DCb5KHP_H" target="_blank">
+                <img src="assets/Tarea 2 - IE.jpg" alt="Tarea 2">
+                <p><strong>Tarea 2:</strong> Uso de bucles y condicionales para generar composiciones dinámicas y repetitivas.</p>
+              </a>
+            </div>
+            <div class="project-card">
+              <a href="https://editor.p5js.org/Matatepano/sketches/vSVAsTens" target="_blank">
+                <img src="assets/Tarea 3 - IE.jpg" alt="Tarea 3">
+                <p><strong>Tarea 3:</strong> Exploración de transformaciones como <em>translate</em>, <em>rotate</em> y <em>scale</em>.</p>
+              </a>
+            </div>
+            <div class="project-card">
+              <a href="https://editor.p5js.org/Matatepano/sketches/PEP2E0-VX" target="_blank">
+                <img src="assets/Tarea 4 - IE.jpg" alt="Tarea 4">
+                <p><strong>Tarea 4:</strong> Generación de un patrón recursivo con interactividad mediante slider.</p>
+              </a>
+            </div>
+          </div>
+
+          <!-- Botón Wiki -->
+          <a class="btn" href="https://wiki.ead.pucv.cl/Sitio_Web_IE_-_Mata_Tepano" target="_blank">Ver más en mi Wiki</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- cierre container -->
+
+  <script>
+    // Funcionalidad desplegable título principal
+    const mainTitle = document.querySelector(".title-container");
+    const mainContent = document.querySelector(".container");
+    mainTitle.addEventListener("click", () => {
+      mainContent.classList.toggle("show");
+    });
+
+    // Funcionalidad desplegable subtítulos
+    const subTitles = document.querySelectorAll(".sub-title");
+    subTitles.forEach(sub => {
+      sub.addEventListener("click", () => {
+        const content = sub.nextElementSibling;
+        if(content) content.classList.toggle("show");
+      });
+    });
+  </script>
+</body>
 </html>
